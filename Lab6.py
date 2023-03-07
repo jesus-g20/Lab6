@@ -4,6 +4,7 @@ def encode(password):
         digit = int(i) + 3
         encoded += str(digit)
     return encoded
+# returns encoded password with larger digits
 
 
 def decode(password):
@@ -12,19 +13,14 @@ def decode(password):
         digit = int(i) - 3
         decoded += str(digit)
     return decoded
-
+# returns decoded password with lower digits
 
 def main():
 
     encoded = None
 
     while True:
-        print("Menu")
-        print("-------------")
-        print("1. Encode")
-        print("2. Decode")
-        print("3. Quit")
-        print()
+        print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n")
 
         menu_selection = int(input("Please enter an option: "))
         if menu_selection == 1:
